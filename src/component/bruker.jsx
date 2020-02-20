@@ -7,6 +7,7 @@ import BasicTextFields from "./toolbox";
 import Button from "@material-ui/core/Button";
 import Popup from "reactjs-popup";
 import TextFields from "./nybruker";
+import Typography from "@material-ui/core/Typography";
 
 //Lagd av Sondre Reiholdtsen StudNr: 225274
 
@@ -41,7 +42,7 @@ const useStyles = makeStyles(theme => ({
 
 const login = {
   fontSize: "20px",
-  textDecoration: "underline"
+  color: "white"
 };
 
 /*Funksjonen SimpleModal vil rendre alt innhold i diven og Modal taggen 
@@ -65,14 +66,15 @@ export default function SimpleModal() {
 
   return (
     <div>
-      <p
+      <Typography
         style={login}
+        className={classes.title}
         onClick={handleOpen} //Sørger for at React.useState blir true
         onMouseEnter={onMouseOver} //Highlighter teksten blå
         onMouseLeave={onMouseOut} //Endrer tekstfargen tilbake til det den orginalt var
       >
         Login
-      </p>
+      </Typography>
       <Modal
         aria-labelledby="simple-modal-title" //Font
         aria-describedby="simple-modal-description" //Font

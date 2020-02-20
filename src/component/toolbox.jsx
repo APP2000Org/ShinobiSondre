@@ -4,12 +4,12 @@ import TextField from "@material-ui/core/TextField";
 
 export const onMouseOut = event => {
   const el = event.target;
-  el.style.color = "black";
+  el.style.color = "white";
 };
 
 export const onMouseOver = event => {
   const el = event.target;
-  el.style.color = "blue";
+  el.style.color = "grey";
 };
 
 export default function BasicTextFields() {
