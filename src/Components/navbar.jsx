@@ -82,7 +82,7 @@ export default function SearchAppBar() {
               <SearchIcon />
             </div>
             <InputBase
-              placeholder="Searchâ¦"
+              placeholder="Søk"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput
