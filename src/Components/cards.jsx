@@ -4,11 +4,12 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import SimpleModal from "./modal";
 import CustomizedBadges from "./pamelding";
+import TextFields from "./nybruker";
+import Popup from "reactjs-popup";
 
 const useStyles = makeStyles({
   card: {
@@ -43,9 +44,13 @@ export default function MediaCard() {
       </CardActionArea>
       <CardActions>
         <SimpleModal />
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <Popup modal trigger={<Button color="primary">Les mer</Button>}>
+          <div style={classes} className={classes.paper}>
+            <form>{TextFields()}</form>
+            <br />
+            <Button color="primary">Bekreft bruker!</Button>
+          </div>
+        </Popup>
         <CustomizedBadges />
       </CardActions>
     </Card>
