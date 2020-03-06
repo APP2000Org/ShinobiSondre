@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-import SearchAppBar from "./Components/navbar";
-import SimpleContainer from "./Components/contaier1";
-import SimpleContainer2 from "./Components/container2";
+import SearchAppBar from "./Components/Header/navbar";
+import Gmaps_Container from "./Components/Gmaps/Gmap_Container";
+import Main_Container from "./Components/Main/Main_Container";
 
 function App() {
   return (
     <div>
       <SearchAppBar />
-      <SimpleContainer />,
-      <SimpleContainer2 />,
+      <Gmaps_Container />
+      <Main_Container></Main_Container>
     </div>
   );
 }

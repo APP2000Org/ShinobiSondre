@@ -22,7 +22,7 @@ const StyledBadge = withStyles(theme => ({
   }
 }))(Badge);
 
-export default function CustomizedBadges() {
+export default function Påmelding() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
